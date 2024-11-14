@@ -27,7 +27,7 @@ class Multiselect extends AbstractElement
         $value = parent::getAttributeValue();
         if(is_string($value))
         { 
-            return explode(",", parent::getAttributeValue());
+            return explode(",", $value);
         }
         return $value;
     }
